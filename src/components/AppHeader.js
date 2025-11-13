@@ -6,6 +6,7 @@ import {
   CDropdownItem,
   CDropdownMenu,
   CDropdownToggle,
+  CDropdownHeader,
   CHeader,
   CHeaderNav,
   CHeaderToggler,
@@ -90,7 +91,7 @@ const AppHeader = () => {
                 </div>
               </CDropdownToggle>
               <CDropdownMenu className="pt-0">
-                <CDropdownItem header>Notifications</CDropdownItem>
+                <CDropdownHeader>Notifications</CDropdownHeader>
                 {notifications.length > 0 ? (
                   notifications.map((note, index) => (
                     <CDropdownItem key={index}>{note}</CDropdownItem>
