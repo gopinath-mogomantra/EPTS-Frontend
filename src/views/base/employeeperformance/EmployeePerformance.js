@@ -326,7 +326,11 @@ function EmployeePerformance() {
             </div>
             <button
               className="btn btn-primary"
-              onClick={() => navigate("/theme/performancemetrics")}
+              onClick={() =>
+                navigate("/theme/performancemetrics", {
+                  state: { forceLatestWeek: true }
+                })
+              }
             >
               <i className="bi bi-plus-circle me-2" /> Add Performance
             </button>
